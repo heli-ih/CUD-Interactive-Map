@@ -1,0 +1,29 @@
+{
+  "name": "cud-interactive-map",
+  "version": "0.0.1",
+  "description": "CUD Interactive Map",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./styles/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malfalasi1017/CUD-Interactive-Map.git"
+  },
+  "author": "Mohammed Alfalasi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malfalasi1017/CUD-Interactive-Map/issues"
+  },
+  "homepage": "https://github.com/malfalasi1017/CUD-Interactive-Map#readme",
+  "devDependencies": {
+    "electron": "^23.1.0",
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "firebase": "^9.17.1",
+    "three": "^0.156.1"
+  }
+}

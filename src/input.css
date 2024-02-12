@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .canvas_size {
+    width: 1300px;
+    height: auto;
+  }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/default-profile-664x664-2-transformed.jpeg"
+      type="image/jpeg"
+    />
+    <title>CUD Map</title>
+  </head>
+
+  <body class="divide-y-2 bg-stone-100 aspect-w-16 aspect-h-9">
+    <div
+      class="bg-cover bg-center min-h-screen grid grid-rows-7"
+      style="background-image: url('./img/map.jpg')"
+    >
+      <!-- first row -->
+      <div
+        class="row-span-1 flex justify-between items-center p-4 pt-6 pb-6 bg-custom"
+      >
+        <span class="flex items-center">
+          <img
+            class="h-22 w-80 ml-16"
+            src="./img/CUDlogo.png"
+            alt="HUB Interactive Map"
+          />
+          <a href="https://www.cud.ac.ae/about"
+            ><h4 class="ml-7 text-white text-xl">About CUD</h4></a
+          >
+          <a href="https://www.cud.ac.ae/contact"
+            ><h4 class="ml-7 text-white text-xl">Contact us</h4></a
+          >
+        </span>
+
+        <span>
+          <a href="https://my.cud.ac.ae/login/index.php"
+            ><button
+              class="mr-7 pl-5 pr-7 p-2 text-white text-lg border border-white rounded-lg items-center hover:bg-stone-100 hover:text-gray-700"
+            >
+              <img
+                class="inline-block"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA40lEQVR4nOXVMUpDQRDG8VS5R7xADJqIpMkxRLBNIDlCGk9gK1oFQQjpvIeFHsCQtK9IIVZpfhJ4yOMhcXf1RYMfDGwxM39md2a2Vvs3QhPPWEXYEucxkIk0zWMgs0RIFgOZFgKvcLTFLlIh/TxojeMvfNtJkDz4EI38fIB7nPwopJRonCd5RbcqyGUh0Rt6wRDUMcI1brbYY6mLPioKgdxGtmgZdBoCefE9PYRANldReSV1DCt9k51016/PCVqbSS9M/B06n/ilQTCofHfZ0RaeSVP2537GJp4i//gFzoIhe6N3uLdJmdFqYPAAAAAASUVORK5CYII="
+              />
+              Login
+            </button></a
+          >
+          <a href="https://cudportal.cud.ac.ae/apply?utm_source=Organic_channel"
+            ><button
+              class="mr-12 pl-7 pr-7 p-2 text-white text-lg border border-white rounded-lg hover:bg-stone-100 hover:text-gray-700"
+            >
+              Apply Now
+            </button></a
+          >
+        </span>
+      </div>
+
+      <!-- second row -->
+
+      <div class="row-span-6 grid grid-cols-4 divide-x-4">
+        <!-- first col -->
+        <div class="col-span-1 p-5 mx-2">
+          <!-- search  -->
+          <div class="mb-7 mt-5">
+            <form class="grid grid-cols-5">
+              <input
+                class="col-span-4 bg-stone-100 border-gray-600 border-2 rounded-lg text-sm py-2 pl-2 mr-2 shadow-2xl shadow-black"
+                placeholder="Enter a name"
+                id="search-input"
+                name="search"
+              />
+
+              <div
+                class="cols-span-1 flex justify-center text-center items-center border-2 rounded-lg text-sm bg-red-500 text-stone-100 border-gray-700 shadow-2xl shadow-black hover:text-custom"
+              >
+                Search
+              </div>
+            </form>
+          </div>
+
+          <!-- list -->
+          <div
+            id="list"
+            class="flex flex-col bg-stone-100 p-6 rounded-lg border border-custom shadow-2xl shadow-black h-list-h overflow-y-scroll"
+          ></div>
+        </div>
+
+        <!-- second col -->
+        <div class="col-span-3 flex justify-center p-10 rounded-xl">
+          <img
+            class="absolute"
+            src="./blueprints/HUB GF EXIT.jpg"
+            alt="Campus Map"
+            id="image"
+          />
+          <canvas
+            class="canvas_size max-w-full max-h-full border-2 border-custom rounded-lg shadow-2xl shadow-black"
+            id="canvas"
+          ></canvas>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

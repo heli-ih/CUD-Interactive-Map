@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Said Elnaffar",
+    "title": "Associate Professor",
+    "office": "Hub G,09",
+    "telephone": "+971(4)7096821",
+    "image": "./img/Dr.Said.png"
+  },
+  {
+    "id": 2,
+    "name": "Dr. Sherif Moussa",
+    "title": "Dean, FEAST",
+    "office": "Hub 1,26",
+    "telephone": "+971(4)7096200",
+    "image": "./img/Dr.Sherif.png"
+  }
+]
